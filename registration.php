@@ -44,12 +44,71 @@
         <p class="h2 mt-3">Registration</p>
         <p>You can add record for student here.</p>
         <div class="card mt-3">
-            <div class="card-header">List of Students</div>
+            <div class="card-header">Registration Form.</div>
             <div class="card-body">
-               
-            </div>
+               <form action="">
+                <div class="row">
+                <div class="col-md-3">
+                        <label>Application ID : <b class="text-danger">*</b></label>
+                        <input type=" " placeholder="Enter application id here.." class="form-control mt-2">
+                    </div>
+                    <div class="col-md-4">
+                        <label>TES award number : <b class="text-danger">*</b></label>
+                        <input type=" " placeholder="Enter TES award number here.." class="form-control mt-2">
+                    </div>
+                    <div class="col-md-5">
+                        <label>Student ID : <b class="text-danger">*</b></label>
+                        <input type=" " placeholder="Enter student id here.." class="form-control mt-2">   
+                       </div>               
+                    </div>
+                <div class="row mt-3">
+                    <div class="col-md-3">
+                        <label>First name : <b class="text-danger">*</b></label>
+                        <input type=" " placeholder="Enter first name here.." class="form-control mt-2">
+                    </div>
+                    <div class="col-md-4">
+                        <label>Last name : <b class="text-danger">*</b></label>
+                        <input type=" " placeholder="Enter last name here.." class="form-control mt-2">
+                    </div>
+                    <div class="col-md-2">
+                        <label>Ext. name : <small>(Optional)</small></label>
+                        <input type=" " placeholder="Enter Ext. name here.." class="form-control mt-2">
+                    </div>
+                    <div class="col-md-3">
+                        <label>Middle name : <small>(Optional)</small></label>
+                        <input type=" " placeholder="Enter middle name here.." class="form-control mt-2">
+                    </div>
+                  </div>  
+                <div class="row mt-3">
+                    <div class="col-md-3">
+                        <label>Gender : <b class="text-danger">*</b></label>
+                        <select name="" id="" class="form-control mt-2">
+                            <option value="" disabled selected>--SELECT GENDER--</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                      </div>
+                    <div class="col-md-4">
+                        <label>Contact number : <b class="text-danger">*</b></label>
+                        <input type=" " placeholder="Enter contact number here.." class="form-control mt-2">
+                    </div>
+                    <div class="col-md-2">
+                        <label>Status : <small>(Optional)</small></label>
+                        <input type=" " placeholder="Enter status here.." class="form-control mt-2">
+                    </div>
+                    <div class="col-md-3">
+                        <label>Award Batch : <b class="text-danger">*</b></label>
+                        <input type=" " placeholder="Batch X" class="form-control mt-2">
+                    </div>
+                 </div>
+               </form>
+             </div>
             <div class="card-footer">
-                -
+                <span style="float: right">
+                <button class="btn btn-succes">
+                   Add New Student
+                </button>
+              </span>
             </div>
         </div>
     </div>
