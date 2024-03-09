@@ -46,43 +46,60 @@
         <div class="card mt-3">
             <div class="card-header">Registration Form.</div>
             <div class="card-body">
-               <form action="">
+                <?php
+                if(isset($_GET['succes'])){
+                    ?>
+                  <div class="alert alert-danger">
+                    <b>New student added</b>. Congrats. Thank you!
+                </div>
+                <hr>
+                <?php
+                }elseif(isset($_GET['invalid'])){
+                    ?>
+                    <div class="alert alert-danger">
+                    <b>Existed Application ID</b>. Please Try Another. Thank you.
+                </div>
+                <hr>
+                <?php
+                }               
+                ?>
+                <form action="">
                 <div class="row">
                 <div class="col-md-3">
                         <label>Application ID : <b class="text-danger">*</b></label>
-                        <input type=" " placeholder="Enter application id here.." class="form-control mt-2">
+                        <input name="inp_appid" required type=" " placeholder="Enter application id here.." class="form-control mt-2">
                     </div>
                     <div class="col-md-4">
                         <label>TES award number : <b class="text-danger">*</b></label>
-                        <input type=" " placeholder="Enter TES award number here.." class="form-control mt-2">
+                        <input name="inp_awardnum" required type=" " placeholder="Enter TES award number here.." class="form-control mt-2">
                     </div>
                     <div class="col-md-5">
                         <label>Student ID : <b class="text-danger">*</b></label>
-                        <input type=" " placeholder="Enter student id here.." class="form-control mt-2">   
+                        <input name="inp_sid" required type=" " placeholder="Enter student id here.." class="form-control mt-2">   
                        </div>               
                     </div>
                 <div class="row mt-3">
                     <div class="col-md-3">
                         <label>First name : <b class="text-danger">*</b></label>
-                        <input type=" " placeholder="Enter first name here.." class="form-control mt-2">
+                        <input name="inp_fname" required type=" " placeholder="Enter first name here.." class="form-control mt-2">
                     </div>
                     <div class="col-md-4">
                         <label>Last name : <b class="text-danger">*</b></label>
-                        <input type=" " placeholder="Enter last name here.." class="form-control mt-2">
+                        <input name="inp_lname" required type=" " placeholder="Enter last name here.." class="form-control mt-2">
                     </div>
                     <div class="col-md-2">
                         <label>Ext. name : <small>(Optional)</small></label>
-                        <input type=" " placeholder="Enter Ext. name here.." class="form-control mt-2">
+                        <input name="inp_xtname" type=" " placeholder="Enter Ext. name here.." class="form-control mt-2">
                     </div>
                     <div class="col-md-3">
                         <label>Middle name : <small>(Optional)</small></label>
-                        <input type=" " placeholder="Enter middle name here.." class="form-control mt-2">
+                        <input name="inp_midname" type=" " placeholder="Enter middle name here.." class="form-control mt-2">
                     </div>
                   </div>  
                 <div class="row mt-3">
                     <div class="col-md-3">
                         <label>Gender : <b class="text-danger">*</b></label>
-                        <select name="" id="" class="form-control mt-2">
+                        <select name="inp_gender" required id="" class="form-control mt-2">
                             <option value="" disabled selected>--SELECT GENDER--</option>
                             <option value="Male">Male</option>
                             <option value="Female">Female</option>
@@ -90,15 +107,15 @@
                       </div>
                     <div class="col-md-4">
                         <label>Contact number : <b class="text-danger">*</b></label>
-                        <input type=" " placeholder="Enter contact number here.." class="form-control mt-2">
+                        <input name="inp_contact" required type=" " placeholder="Enter contact number here.." class="form-control mt-2">
                     </div>
                     <div class="col-md-2">
                         <label>Status : <small>(Optional)</small></label>
-                        <input type=" " placeholder="Enter status here.." class="form-control mt-2">
+                        <input name="inp_status" type=" " placeholder="Enter status here.." class="form-control mt-2">
                     </div>
                     <div class="col-md-3">
                         <label>Award Batch : <b class="text-danger">*</b></label>
-                        <input type=" " placeholder="Batch X" class="form-control mt-2">
+                        <input name="inp_batch" required type=" " placeholder="Batch X" class="form-control mt-2">
                     </div>
                  </div>
                </form>

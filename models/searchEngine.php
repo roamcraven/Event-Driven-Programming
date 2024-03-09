@@ -4,7 +4,7 @@ include('../config/database.php');
 
 $value = $_POST['search'];
 
-$sql = "SELECT * FROM t_requestid WHERE rd_name LIKE '%$value%'";
+$sql = "SELECT * FROM s_app_id WHERE (s_firstName LIKE '%$value%' OR s_lastName LIKE '%$value%')";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -12,10 +12,10 @@ if ($result->num_rows > 0) {
         ?>
         <tr>
             <td style="text-align: center;">
-                <?= $row['rd_sid'] ?>
+                <?= $row['s_sid'] ?>
             </td>
             <td>
-                <?= $row['rd_name'] ?>
+                <?= $row['s_lastName'] ?>, <?= $row['s_firstName'] ?>
             </td>
             <td class="d-grid">
                 <button type="button" 
