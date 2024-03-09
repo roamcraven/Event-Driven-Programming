@@ -13,7 +13,7 @@
 
     <style>
         body {
-            background-color: #ecf0f1;
+            background-color: #ADD8E6;
         }
     </style>
 </head>
@@ -22,7 +22,7 @@
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="javascript:void(0)">
-                <img src="/assets/img/logo.png" height="30">
+                <img src="/assets/img/School-logo" height="30">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -33,13 +33,12 @@
                         <a class="nav-link" href="/">Dashboard</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/registration.php">Registration</a>
+                        <a class="nav-link" href="/Event-driven/registration.php">Registration</a>
                     </li>
                 </ul>
                 <form class="d-flex">
                     <input onkeyup="search(this.value)" class="form-control me-2" type="text"
                         placeholder="Search anything here..">
-                    <button class="btn btn-primary" type="button">Search</button>
                 </form>
             </div>
         </div>

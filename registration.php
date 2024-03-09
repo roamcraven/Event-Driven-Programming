@@ -13,7 +13,7 @@
 
     <style>
         body {
-            background-color: #ecf0f1;
+            background-color: #ADD8E6;
         }
     </style>
 </head>
@@ -22,7 +22,7 @@
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="javascript:void(0)">
-                <img src="/assets/img/logo.png" height="30">
+                <img src="/assets/img/School-logo" height="50">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -30,10 +30,10 @@
             <div class="collapse navbar-collapse" id="mynavbar">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="/">Dashboard</a>
+                        <a class="nav-link" href="/Event-driven/index.php">Dashboard</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/registration.php">Registration</a>
+                        <a class="nav-link" href="/Event-driven/registration.php">Registration</a>
                     </li>
                 </ul>
             </div>
@@ -67,33 +67,33 @@
                 <div class="row">
                 <div class="col-md-3">
                         <label>Application ID : <b class="text-danger">*</b></label>
-                        <input name="inp_appid" required type=" " placeholder="Enter application id here.." class="form-control mt-2">
+                        <input name="inp_appid" required type="text" placeholder="Enter application id here.." class="form-control mt-2">
                     </div>
                     <div class="col-md-4">
                         <label>TES award number : <b class="text-danger">*</b></label>
-                        <input name="inp_awardnum" required type=" " placeholder="Enter TES award number here.." class="form-control mt-2">
+                        <input name="inp_awardnum" required type="text" placeholder="Enter TES award number here.." class="form-control mt-2">
                     </div>
                     <div class="col-md-5">
                         <label>Student ID : <b class="text-danger">*</b></label>
-                        <input name="inp_sid" required type=" " placeholder="Enter student id here.." class="form-control mt-2">   
+                        <input name="inp_sid" required type="text" placeholder="Enter student id here.." class="form-control mt-2">   
                        </div>               
                     </div>
-                <div class="row mt-3">
+                    <div class="row mt-3">
                     <div class="col-md-3">
                         <label>First name : <b class="text-danger">*</b></label>
-                        <input name="inp_fname" required type=" " placeholder="Enter first name here.." class="form-control mt-2">
+                        <input name="inp_fname" required type="text" placeholder="Enter first name here.." class="form-control mt-2">
                     </div>
                     <div class="col-md-4">
                         <label>Last name : <b class="text-danger">*</b></label>
-                        <input name="inp_lname" required type=" " placeholder="Enter last name here.." class="form-control mt-2">
+                        <input name="inp_lname" required type="text" placeholder="Enter last name here.." class="form-control mt-2">
                     </div>
                     <div class="col-md-2">
                         <label>Ext. name : <small>(Optional)</small></label>
-                        <input name="inp_xtname" type=" " placeholder="Enter Ext. name here.." class="form-control mt-2">
+                        <input name="inp_xtname" type="text" placeholder="Enter Ext. name here.." class="form-control mt-2">
                     </div>
                     <div class="col-md-3">
                         <label>Middle name : <small>(Optional)</small></label>
-                        <input name="inp_midname" type=" " placeholder="Enter middle name here.." class="form-control mt-2">
+                        <input name="inp_midname" type="text" placeholder="Enter middle name here.." class="form-control mt-2">
                     </div>
                   </div>  
                 <div class="row mt-3">
@@ -107,23 +107,23 @@
                       </div>
                     <div class="col-md-4">
                         <label>Contact number : <b class="text-danger">*</b></label>
-                        <input name="inp_contact" required type=" " placeholder="Enter contact number here.." class="form-control mt-2">
+                        <input name="inp_contact" required type="text" placeholder="Enter contact number here.." class="form-control mt-2">
                     </div>
                     <div class="col-md-2">
                         <label>Status : <small>(Optional)</small></label>
-                        <input name="inp_status" type=" " placeholder="Enter status here.." class="form-control mt-2">
+                        <input name="inp_status" type="textt" placeholder="Enter status here.." class="form-control mt-2">
                     </div>
                     <div class="col-md-3">
                         <label>Award Batch : <b class="text-danger">*</b></label>
-                        <input name="inp_batch" required type=" " placeholder="Batch X" class="form-control mt-2">
+                        <input name="inp_batch" required type="textt" placeholder="Batch X" class="form-control mt-2">
                     </div>
                  </div>
                </form>
              </div>
             <div class="card-footer">
                 <span style="float: right">
-                <button class="btn btn-succes">
-                   Add New Student
+                <button class="btn btn-success">
+                  Add New Student
                 </button>
               </span>
             </div>
