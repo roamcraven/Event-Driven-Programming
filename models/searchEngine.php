@@ -16,7 +16,7 @@ if ($result->num_rows > 0) {
                 <?= $row['s_app_id'] ?>
             </td>
             <td>
-                <?= $row['s_firstName'] ?>, <?= $row['s_lastName'] ?>
+                <?= $row['s_lastName'] ?>, <?= $row['s_firstName'] ?>
             </td>
             <td class="d-grid">
                 <button type="button" 
