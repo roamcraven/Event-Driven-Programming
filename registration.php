@@ -44,60 +44,60 @@
         <p class="h2 mt-3">Registration</p>
         <p>You can add record for student here.</p>
         <div class="card mt-3">
-        <form action="/models/save.php" method="POST">
+        <form action="/Event-driven-programming/models/save.php" method="POST">
             <div class="card-header">Registration Form.</div>
             <div class="card-body">
                 <?php
                 if(isset($_GET['success'])){
                     ?>
-                  <div class="alert alert-danger">
-                    <b>New student added</b>. Congrats. Thank you!
-                </div>
-                <hr>
+                    <div class="alert alert-success">
+                        <b>New student added</b>. Congrats. Thank you!
+                    </div>
+                    <hr>
                 <?php
-                }elseif(isset($_GET['invalid'])){
+                } elseif(isset($_GET['invalid'])){
                     ?>
                     <div class="alert alert-danger">
-                    <b>Existed Application ID</b>. Please Try Another. Thank you.
-                </div>
-                <hr>
+                        <b>Existing Application ID</b>. Please Try Another. Thank you.
+                    </div>
+                    <hr>
                 <?php
-                }               
-                ?>
+                }
+                ?>      
                 <div class="row">
                 <div class="col-md-3">
                         <label>Application ID : <b class="text-danger">*</b></label>
-                        <input name="in_appid" required type="text" placeholder="Enter application id here.." class="form-control mt-2">
+                        <input name="inp_app_id" required type="text" placeholder="Enter application id here.." class="form-control mt-2">
                     </div>
                     <div class="col-md-4">
                         <label>TES award number : <b class="text-danger">*</b></label>
-                        <input name="in_award_num" required type="text" placeholder="Enter TES award number here.." class="form-control mt-2">
+                        <input name="inp_award_num" required type="text" placeholder="Enter TES award number here.." class="form-control mt-2">
                     </div>
                     <div class="col-md-5">
                         <label>Student ID : <b class="text-danger">*</b></label>
-                        <input name="in_sid" required type="text" placeholder="Enter student id here.." class="form-control mt-2">   
+                        <input name="inp_sid" required type="text" placeholder="Enter student id here.." class="form-control mt-2">   
                        </div>               
                     <div class="row mt-3">
                     <div class="col-md-3">
                         <label>First name : <b class="text-danger">*</b></label>
-                        <input name="in_first_name" required type="text" placeholder="Enter first name here.." class="form-control mt-2">
+                        <input name="inp_firstName" required type="text" placeholder="Enter first name here.." class="form-control mt-2">
                     </div>
                     <div class="col-md-4">
                         <label>Last name : <b class="text-danger">*</b></label>
-                        <input name="in_last_name" required type="text" placeholder="Enter last name here.." class="form-control mt-2">
+                        <input name="inp_lastName" required type="text" placeholder="Enter last name here.." class="form-control mt-2">
                     </div>
                     <div class="col-md-2">
                         <label>Ext. name : <small>(Optional)</small></label>
-                        <input name="in_xt_name" type="text" placeholder="Enter Ext. name here.." class="form-control mt-2">
+                        <input name="inp_extName" type="text" placeholder="Enter Ext. name here.." class="form-control mt-2">
                     </div>
                     <div class="col-md-3">
                         <label>Middle name : <small>(Optional)</small></label>
-                        <input name="in_mid_name" type="text" placeholder="Enter middle name here.." class="form-control mt-2">
+                        <input name="inp_midName" type="text" placeholder="Enter middle name here.." class="form-control mt-2">
                     </div> 
                 <div class="row mt-3">
                     <div class="col-md-3">
                         <label>Gender : <b class="text-danger">*</b></label>
-                        <select name="in_gender" required id="" class="form-control mt-2">
+                        <select name="inp_gender" required id="" class="form-control mt-2">
                             <option value="" disabled selected>--SELECT GENDER--</option>
                             <option value="Male">Male</option>
                             <option value="Female">Female</option>
@@ -105,15 +105,15 @@
                       </div>
                     <div class="col-md-4">
                         <label>Contact number : <b class="text-danger">*</b></label>
-                        <input name="in_contact" required type="text" placeholder="09 XXXX XXXX" class="form-control mt-2">
+                        <input name="inp_contNum" required type="text" placeholder="09 XXXX XXXX" class="form-control mt-2">
                     </div>
                     <div class="col-md-2">
                         <label>Status : <small>(Optional)</small></label>
-                        <input name="in_status" type="text" placeholder="Enter status here.." class="form-control mt-2">
+                        <input name="inp_status" type="text" placeholder="Enter status here.." class="form-control mt-2">
                     </div>
                     <div class="col-md-3">
                         <label>Award Batch : <b class="text-danger">*</b></label>
-                        <input name="in_batch_num" required type="text" placeholder="Batch X" class="form-control mt-2">
+                        <input name="inp_batchNum" required type="text" placeholder="Batch X" class="form-control mt-2">
                     </div>
                  </div>
              </div>
