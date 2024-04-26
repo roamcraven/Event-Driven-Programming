@@ -18,31 +18,30 @@
     
    save($registration);
 
-   function save($data){
-      include('../config/database.php');
-      
-      // Sanitize and escape values to prevent SQL injection
-      $sanitizedData = array_map(function($value) use ($conn) {
-          return mysqli_real_escape_string($conn, $value);
-      }, $data);
-  
-      $attributes = implode(",", array_keys($sanitizedData));
-      $values = "'" . implode("','", array_values($sanitizedData)) . "'";
-      $queryInsert = "INSERT IGNORE INTO s_students ($attributes) VALUES ($values)";
-  
-      if($conn->query($queryInsert) === TRUE){
-          if ($conn->affected_rows > 0) {
-              $conn->close();
-              header('location: /Event-driven-programming/registration.php?success');
-              exit();
-          } else {
-              $conn->close();
-              header('location: /Event-driven-programming/registration.php?invalid');
-              exit();
-          }
-      } 
+         function save($data)
+{
+          include('../config/database.php');
 
-   }
-  
+          $attributes = implode(", ", array_keys($data));
+          $values = implode(", ", array_values($data));
+
+          $app_id = $_POST['inp_appid'];
+          $validate = "SELECT COUNT(*) AS i FROM t_students WHERE s_app_id LIKE '$app_id'";
+
+          $rs = $conn->query($validate);
+          $count = $rs->fetch_assoc();
+
+          if($count['i'] == 0){
+      
+           $query = "INSERT INTO t_students ($attributes) VALUES ($values)";
+           $conn->query($query);
+           header('location: ../registration.php?success');
+          }else{
+      
+           header('location: ../registration.php?invalid');
+         }
+
+         $conn->close();
+}
   
   

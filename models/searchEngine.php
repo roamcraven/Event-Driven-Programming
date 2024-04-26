@@ -4,7 +4,7 @@ include('../config/database.php');
 
 $value = $_POST['search'];
 
-$sql = "SELECT * FROM s_students WHERE (s_lastName LIKE '%$value%' OR s_firstName LIKE '%$value%')";
+$sql = "SELECT * FROM t_students WHERE (s_lastName LIKE '%$value%' OR s_firstName LIKE '%$value%')";
 
 $result = $conn->query($sql);
 
